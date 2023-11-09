@@ -1,0 +1,15 @@
+{
+  "name": "campinho-9-10-23",
+  "version": "1.0.0",
+  "description": "- Crie um novo diretório para o seu projeto e navegue até ele no terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.1"
+  }
+}
