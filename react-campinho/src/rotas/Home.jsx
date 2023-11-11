@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+    const [usuarios, setUsers] = useState([]);
 
   const getUser = async () => {
 
@@ -13,8 +14,9 @@ const Home = () => {
         const resposta = await axios.get("https://jsonplaceholder.typicode.com/users");
 
         const data = resposta.data;
-        console.log(data);
         
+        setUsers(data)
+
     } catch (erro) {
         console.error("Erro: " + erro)
     }
@@ -22,11 +24,26 @@ const Home = () => {
 
   useEffect(() => {
     getUser()
-  }, [])
+  }, []);
 
 
 
-  return <div>Home</div>;
+  return <div>
+    <h1>Usuários</h1>
+    {usuarios.length === 0 ? (<p>Carregando...</p>) : (
+        usuarios.map((usuario) => (
+            <div className="usuario" key={usuario.id}>
+                <div className="info">
+                  
+                <h2><p>Nome:</p>{usuario.name}</h2>
+                <h2><p>Usuário:</p>{usuario.username}</h2>
+                <h2><p>Email:</p>{usuario.email}</h2>
+              
+                </div>
+            </div>
+        ))
+    )}
+  </div>;
 };
 
 export default Home;

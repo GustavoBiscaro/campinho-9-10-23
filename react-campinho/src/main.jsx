@@ -6,7 +6,7 @@ import {createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
 
 // páginas
 import Home from "./rotas/Home";
-import Usuarios from "./rotas/Usuarios";
+
 
 import './index.css';
 
@@ -18,10 +18,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home/>,
       },
-      {
-        path: "/user",
-        element: <Usuarios/>,
-      },
+  
     ],
   },
 ]);

@@ -13,11 +13,9 @@ const navbar = () => {
         </h2>
         <ul>
             <li>
-                <Link to={`/`}>Página Inicial</Link>
+                <Link to={`/`}>Usuários</Link>
             </li>
-            <li>
-                <Link to={`/user`}>Usuários</Link>
-            </li>
+          
         </ul>
     </nav>
   )

@@ -23,5 +23,9 @@ a:hover {
 }
 
 p {
-  color: #a9abb3bb;
+  display: flex;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  opacity: 1;
 }
