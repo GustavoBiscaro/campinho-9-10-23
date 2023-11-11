@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 20px;
+}
+
+.navbar h2 a {
+    display: flex;
+    color: rgba(56, 51, 51, 0.9);
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    opacity: 1;
+    
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
